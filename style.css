@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#ffdabf;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    
+    
+    
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: auto;
+    background-color:  white;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+    margin-top: 0;
+    font-size: 20px;
+    
+    
+    
+   
+  }
+
+  nav {
+      text-align: right;
+      flex-grow: 1;
+      
+    
+  }
+
+  nav span {
+      display: inline-block;
+     list-style-type: none;
+     margin: 10px;
+     padding: 10px 20px; 
+     font-weight: 120;
+  }
+
+  a {
+    color: grey;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: white;
+    background-color: Lightgrey;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 23px;
+    padding: 10px;
+    
+
+}
+
+
+  header img {
+    padding-left: 10px;
+    
+    height: 177px;
+    width: auto;
+    
+  }
+
+  @media only screen and (max-width: 480px) {
+    header {
+        width: 100%;
+        height: auto;
+        font-size: 17px;
+    }
+    nav {
+        justify-content: center;
+        text-align: center;
+    }
+    nav span {
+        display: inline-block;
+        
+        
+        list-style-type: none;
+        padding: 10px 10px;
+        
+    }
+    header img {
+        height: 177px;
+        width: auto;
+        
+    }
+    nav a:hover {
+        color: white;
+        background-color: Lightgrey;
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-size: 20px;
+        padding: 5px;
+        
+    
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        font-size: 17px;
+        
+    }
+    nav {
+        justify-content: center;
+        text-align: center;
+    }
+    nav span {
+        display: inline-block;
+        
+        
+        list-style-type: none;
+        padding: 10px 10px;
+    }
+    header img {
+        height: 110px;
+        width: auto;
+        
+    }
+    nav a:hover {
+        color: white;
+        background-color: Lightgrey;
+        font-weight: 100;
+        letter-spacing: 2px;
+        font-size: 17px;
+        padding: 5px;
+        
+    
+    }
+}
+@media only screen and (max-width: 817px) and (min-width: 548px) {
+    header {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        
+        
+    }
+    nav {
+        justify-content: center;
+        text-align: center;
+    }
+    nav span {
+        display: inline-block;
+        
+        
+        list-style-type: none;
+        padding: 10px 10px;
+    }
+    header img {
+        height: 110px;
+        width: auto;
+        display: block;
+    }
+    nav a:hover {
+        color: white;
+        background-color: Lightgrey;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 16px;
+        padding: 5px;
+        
+    
+    }
+
+}
+
+@media only screen and (max-width: 599px) and (min-width: 566px){
+    header {
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+        
+        
+    }
+    nav a:hover {
+        color: white;
+        background-color: Lightgrey;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: 15px;
+        padding: 4px;
+        
+    
+    }
+    
+
+}
+
+/* BANNER WELCOME TO SAN FRANCISCO */
+
+#banner {
+    background-image: url("images/3-days-in-san-fran_banner_1.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: 177px;
+}
+
+#content h1 {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
+  /*padding: 20px;*/
+  color:white;
+  text-align: center;
+  background-color: lightgrey;
+  font-size: 32px;
+  font-weight: 270;
+    letter-spacing: 2px;
+    
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+
+
+@media only screen and (max-width: 778px) and (min-width: 769px) {
+    header {
+        width: 100%;
+        height: auto;
+        /* had to lower the font size to make it fit in one line- inline */
+        /* but now i also have to move banner closer to navbar again*/
+        font-size: 16px;
+        
+    }
+    /*moving banner closer to nav*/
+    #banner {
+        background-image: url("images/3-days-in-san-fran_banner_1.jpg");
+        background-size: cover;
+        background-position: bottom center;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        /* less offset from the top*/
+        top: 140px;
+    }
+    
+
+
+}
+
+/* also making the banner connect with navbar for these widths */
+@media only screen and (max-width: 530px) and (min-width: 460px) {
+    #banner {
+        background-image: url("images/3-days-in-san-fran_banner_1.jpg");
+        background-size: cover;
+        background-position: bottom center;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        /* less offset from the top*/
+        top: 130px;
+    }
+
+
+}
+@media only screen and (max-width: 816px) and (min-width: 769px) {
+    #banner {
+        background-image: url("images/3-days-in-san-fran_banner_1.jpg");
+        background-size: cover;
+        background-position: bottom center;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        /* less offset from the top*/
+        top: 112px;
+    }
+
+
+}
+
+
+
+/* MAKING THE BANNER CONNECT WITH THE NAVBAR WHEN IN THESE SCREEN WIDTHS; AND NOT BE SEPARATED */
+@media only screen and (max-width: 768px) and (min-width: 531px ) {
+    #banner {
+        background-image: url("images/3-days-in-san-fran_banner_1.jpg");
+        background-size: cover;
+        background-position: bottom center;
+        height: 500px;
+        width: 100%;
+        position: relative;
+        /* less offset from the top*/
+        top: 112px;
+    }
+
+}
+
+/*MAIN*/
+
+.main-content {
+    margin: 0 auto; 
+    padding: 40px;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    top: 170px;
+    
+    
+    
+  
+  }
+  
+  h3 {
+      color: #bf3124;
+      text-transform: uppercase;
+      margin: 20px;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 30px;
+  }
+
+  /* MAKES THE RED H3 ELEMENTS HAVE SMALLER FONT SIZE IN SMALLER BROWSERS */
+
+  @media only screen and (max-width: 564px) and (min-width: 300px) {
+    h3 {
+        color: #bf3124;
+        text-transform: uppercase;
+        margin: 20px;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 30px;
+    }
+  }
+  
+  .writer {
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    color: #333;
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 10px;
+  }
+  
+  p {
+      color: grey;
+      line-height: 30px;
+      font-size: 17px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      
+      
+  
+  }
+  
+  .pull-quote {
+  
+      color: #bf3124;
+      
+      margin: 20px;
+      
+      font-size: 25px;
+      line-height: 30px;
+      border: 1px solid #bf3124;
+      
+  
+      
+      margin:0 auto;
+      text-align: center;
+      padding: auto;
+      
+      
+  
+  }
+  /* makes the img resize proportionally */
+   .wine-img {
+    display: grid;
+    height: auto;
+    max-width: 80%;
+    max-height: 100vh;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   }
+
+   /* adds the white space around photos */ /* i lowered the width from 100% to 75% but it applied only to the img in the full screen browser, but when the browser shrinks to mobile screen size, the img is too small. Make a media query*/
+   .photo {
+    width: 75%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* centers the photo class to the center of the site */
+    margin: 0 auto;
+    padding-bottom: 70px;
+    align-content: center;
+    
+
+  
+}
+  /* media query to make the photo bigger when the browser is shrinked*/
+  @media only screen and (max-width: 839px) and (min-width: 300px ) {
+    .wine-img {
+        display: grid;
+        height: auto;
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+       }
+       .photo {
+        width: 75%;
+        border-radius: 5px;
+        background-color: white;
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* centers the photo class to the center of the site */
+        margin: 0 auto;
+        padding-bottom: 50px;
+        align-content: center;
+    
+      
+    }
+    
+    
+  
+
+  }
+  /* width and padding of img container inside .photo - used this to move the photo more to the top, inside the white container*/
+
+  .photo .image-container img {
+      width: 100%;
+      margin: 30px auto;
+  }
+  
+
+  .photo .caption {
+      font-style: italic;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      color: grey;
+  }
+
+  /* The main-content was too far away from the navbar for these widths, now I moved it closer to the top */
+
+  @media only screen and (max-width: 765px) and (min-width: 535px) {
+    .main-content {
+        margin: 0 auto; 
+        padding: 40px;
+        text-align: center;
+        width: 70%;
+        position: relative;
+        top: 100px;
+        
+        
+        
+      
+      }
+
+  }
+
+
+   .info {
+    margin: 0 auto; 
+    padding: 40px;
+    text-align: center;
+    width: 70%;
+       
+   }
+  .title-info  {
+
+    color:black;
+    font-size: 30px;
+    margin-top: 50px;
+    border-bottom: 1px solid #bf3124;
+    font-weight: 400;
+    margin: 0 auto;
+  }
+  ul {
+      list-style-type: none;
+  }
+  
+   li {
+    color: grey;
+    line-height: 30px;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+  }
+
+  li a:hover {
+      background-color: white;
+      padding: 5px;
+      text-decoration: none;
+      
+  }
+
+  /*READ MORE*/
+
+  .character {
+    color:black;
+    font-size: 32px;
+    margin-top: 50px;
+    border-bottom: 1px solid #bf3124;
+
+}
+.character-video {
+    display: grid;
+    height: 80%;
+    max-width: 70%;
+    max-height: 100vh;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.climate1 {
+    color:black;
+    font-size: 32px;
+    margin-top: 50px;
+    border-bottom: 1px solid #bf3124;
+
+}
+
+.climate {
+    display: grid;
+    height: auto;
+    max-width: 80%;
+    max-height: 100vh;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   }
+.people {
+    color:black;
+    font-size: 32px;
+    margin-top: 50px;
+    border-bottom: 1px solid #bf3124;
+
+}
+.transportation {
+    color:black;
+    font-size: 32px;
+    margin-top: 50px;
+    border-bottom: 1px solid #bf3124;
+
+
+}
+
+.cable-car {
+    display: grid;
+    height: auto;
+    max-width: 80%;
+    max-height: 100vh;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+   }
+
+   .title-sources {
+    color:black;
+    font-size: 32px;
+    margin-top: 50px;
+    border-bottom: 1px solid #bf3124;
+
+   }
+   .button {
+    background-color: #d1270d;
+    border: 1px solid white;
+    margin: 30px;
+    margin-bottom: 70px;
+    color: white;
+   }
+
+   .share{
+    border: 1px solid #DDD;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* it was too far away from the header h2 and the h4, now it is closer*/
+    position: relative;
+    top: 20px;
+    
+}
+#wrap {
+    flex-wrap: wrap;
+}
+
+.share a {
+    
+    margin: 25px;
+    border: 1px solid white;
+    padding: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #bf3124;
+    
+
+}
+
+.share a:hover {
+    text-decoration: none;
+    color: #bf3124;
+    background-color: white;
+    border: 1px solid #bf3124;
+    padding: 15px;
+    margin: 25px;
+    font-size: 16px;
+}
+
+.follow{
+    border: 1px solid #DDD;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* it was too far away from the header h2 and the h4, now it is closer*/
+    position: relative;
+    top: 20px;
+    
+}
+
+.follow-button img  {
+    border-radius : 50%;
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    
+}
+
+.follow-button {
+    margin: 20px;
+    
+}
+
+.copy {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
